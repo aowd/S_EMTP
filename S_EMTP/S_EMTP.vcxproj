@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37BD8C28-2E1E-4B04-9116-9151795BED67}</ProjectGuid>
+    <RootNamespace>S_EMTP</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\inc;C:\root\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\root\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\root\include;.\inc;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:\root\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /GX %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libCore.lib;libMatrix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCIRT.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions> /GX %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>libCore.lib;libMatrix.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCIRT.LIB</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\AcVoltageSource.h" />
+    <ClInclude Include="inc\Asych5.h" />
+    <ClInclude Include="inc\Battery.h" />
+    <ClInclude Include="inc\BranchCurrentMsrComp.h" />
+    <ClInclude Include="inc\BranchVoltageMsrComp.h" />
+    <ClInclude Include="inc\Breaker.h" />
+    <ClInclude Include="inc\Capacitance.h" />
+    <ClInclude Include="inc\Comparator.h" />
+    <ClInclude Include="inc\Component.h" />
+    <ClInclude Include="inc\ConstantCtrlComp.h" />
+    <ClInclude Include="inc\ControlledVoltageSource.h" />
+    <ClInclude Include="inc\CtrlComponent.h" />
+    <ClInclude Include="inc\D2TTrans.h" />
+    <ClInclude Include="inc\Delay.h" />
+    <ClInclude Include="inc\Diode.h" />
+    <ClInclude Include="inc\DiodeWithSC.h" />
+    <ClInclude Include="inc\EMTP.h" />
+    <ClInclude Include="inc\IGBT.h" />
+    <ClInclude Include="inc\Impedance.h" />
+    <ClInclude Include="inc\ImpulseGenComp.h" />
+    <ClInclude Include="inc\InducGenAngleMsr.h" />
+    <ClInclude Include="inc\InducGenerator.h" />
+    <ClInclude Include="inc\InducGenWrMsr.h" />
+    <ClInclude Include="inc\Inductance.h" />
+    <ClInclude Include="inc\Inverter.h" />
+    <ClInclude Include="inc\Limiter.h" />
+    <ClInclude Include="inc\MeasureComponent.h" />
+    <ClInclude Include="inc\Motor15.h" />
+    <ClInclude Include="inc\MWSynGenerator12.h" />
+    <ClInclude Include="inc\newIGBT.h" />
+    <ClInclude Include="inc\NodeVoltageMsrComp.h" />
+    <ClInclude Include="inc\PCtrlComp.h" />
+    <ClInclude Include="inc\PhotoVoltaic.h" />
+    <ClInclude Include="inc\PICtrlComp.h" />
+    <ClInclude Include="inc\PRCoordinate.h" />
+    <ClInclude Include="inc\PulseGenComp.h" />
+    <ClInclude Include="inc\PWMConverter.h" />
+    <ClInclude Include="inc\R2STrans.h" />
+    <ClInclude Include="inc\Resistance.h" />
+    <ClInclude Include="inc\S2RTrans.h" />
+    <ClInclude Include="inc\SampleHold.h" />
+    <ClInclude Include="inc\Sampler.h" />
+    <ClInclude Include="inc\Selector.h" />
+    <ClInclude Include="inc\SigmaCtrlComp.h" />
+    <ClInclude Include="inc\SimpleBranch.h" />
+    <ClInclude Include="inc\SinGenComp.h" />
+    <ClInclude Include="inc\SinglePhaseTransformer.h" />
+    <ClInclude Include="inc\SynchGenerator.h" />
+    <ClInclude Include="inc\T2DTrans.h" />
+    <ClInclude Include="inc\ThreePhaseRectifierBridge.h" />
+    <ClInclude Include="inc\ThreePhaseTransformer.h" />
+    <ClInclude Include="inc\TimeConstant.h" />
+    <ClInclude Include="inc\TimedAcVoltageSource.h" />
+    <ClInclude Include="inc\TimedResistance.h" />
+    <ClInclude Include="inc\TimeSwitch.h" />
+    <ClInclude Include="inc\TriangleGenComp.h" />
+    <ClInclude Include="inc\WindInducGenerator.h" />
+    <ClInclude Include="inc\WoundInducGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AcVoltageSource.cpp" />
+    <ClCompile Include="src\Asych5.cpp" />
+    <ClCompile Include="src\Battery.cpp" />
+    <ClCompile Include="src\BranchCurrentMsrComp.cpp" />
+    <ClCompile Include="src\BranchVoltageMsrComp.cpp" />
+    <ClCompile Include="src\Breaker.cpp" />
+    <ClCompile Include="src\Capacitance.cpp" />
+    <ClCompile Include="src\Comparator.cpp" />
+    <ClCompile Include="src\Component.cpp" />
+    <ClCompile Include="src\ConstantCtrlComp.cpp" />
+    <ClCompile Include="src\ControlledVoltageSource.cpp" />
+    <ClCompile Include="src\CtrlComponent.cpp" />
+    <ClCompile Include="src\D2TTrans.cpp" />
+    <ClCompile Include="src\Delay.cpp" />
+    <ClCompile Include="src\Diode.cpp" />
+    <ClCompile Include="src\DiodeWithSC.cpp" />
+    <ClCompile Include="src\EMTP.cpp" />
+    <ClCompile Include="src\IGBT.cpp" />
+    <ClCompile Include="src\Impedance.cpp" />
+    <ClCompile Include="src\ImpulseGenComp.cpp" />
+    <ClCompile Include="src\InducGenAngleMsr.cpp" />
+    <ClCompile Include="src\InducGenerator.cpp" />
+    <ClCompile Include="src\InducGenWrMsr.cpp" />
+    <ClCompile Include="src\Inductance.cpp" />
+    <ClCompile Include="src\Inverter.cpp" />
+    <ClCompile Include="src\Limiter.cpp" />
+    <ClCompile Include="src\MeasureComponent.cpp" />
+    <ClCompile Include="src\Motor15.cpp" />
+    <ClCompile Include="src\MWSynGenerator12.cpp" />
+    <ClCompile Include="src\newIGBT.cpp" />
+    <ClCompile Include="src\NodeVoltageMsrComp.cpp" />
+    <ClCompile Include="src\PCtrlComp.cpp" />
+    <ClCompile Include="src\PhotoVoltaic.cpp" />
+    <ClCompile Include="src\PICtrlComp.cpp" />
+    <ClCompile Include="src\PRCoordinate.cpp" />
+    <ClCompile Include="src\PulseGenComp.cpp" />
+    <ClCompile Include="src\PWMConverter.cpp" />
+    <ClCompile Include="src\R2STrans.cpp" />
+    <ClCompile Include="src\Resistance.cpp" />
+    <ClCompile Include="src\S2RTrans.cpp" />
+    <ClCompile Include="src\SampleHold.cpp" />
+    <ClCompile Include="src\Sampler.cpp" />
+    <ClCompile Include="src\Selector.cpp" />
+    <ClCompile Include="src\SigmaCtrlComp.cpp" />
+    <ClCompile Include="src\SinGenComp.cpp" />
+    <ClCompile Include="src\S_EMTP.cpp" />
+    <ClCompile Include="src\S_EMTP_linux.cpp" />
+    <ClCompile Include="src\S_EMTP_WIN32.cpp" />
+    <ClCompile Include="src\SimpleBranch.cpp" />
+    <ClCompile Include="src\SinglePhaseTransformer.cpp" />
+    <ClCompile Include="src\SynchGenerator.cpp" />
+    <ClCompile Include="src\T2DTrans.cpp" />
+    <ClCompile Include="src\ThreePhaseRectifierBridge.cpp" />
+    <ClCompile Include="src\ThreePhaseTransformer.cpp" />
+    <ClCompile Include="src\TimeConstant.cpp" />
+    <ClCompile Include="src\TimedAcVoltageSource.cpp" />
+    <ClCompile Include="src\TimedResistance.cpp" />
+    <ClCompile Include="src\TimeSwitch.cpp" />
+    <ClCompile Include="src\TriangleGenComp.cpp" />
+    <ClCompile Include="src\WindInducGenerator.cpp" />
+    <ClCompile Include="src\WoundInducGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configure.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

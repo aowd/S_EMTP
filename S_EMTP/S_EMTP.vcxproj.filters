@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ElecCompt">
+      <UniqueIdentifier>{cde32691-6532-45ed-86d0-bd85d93822b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MsrCompt">
+      <UniqueIdentifier>{a71a58f3-aa81-4b36-80fa-9d9d15748482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CtrlCompt">
+      <UniqueIdentifier>{c753acfb-5b0b-4c19-b8ef-a6f4b5b13b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ElecCompt">
+      <UniqueIdentifier>{d95fc302-0931-45d7-9ba3-ba0bd11ad002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MsrCompt">
+      <UniqueIdentifier>{1d4e3a87-e4ad-4c40-ac19-1bd5aa43d086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\CtrlCompt">
+      <UniqueIdentifier>{52421c1e-12d8-4030-a600-9ef447d5a4b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\EMTP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\AcVoltageSource.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\DiodeWithSC.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Asych5.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Breaker.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Capacitance.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Component.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Diode.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\IGBT.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Impedance.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InducGenerator.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Inductance.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Inverter.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Motor15.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MWSynGenerator12.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\newIGBT.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Resistance.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SimpleBranch.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SinglePhaseTransformer.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SynchGenerator.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ThreePhaseRectifierBridge.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ThreePhaseTransformer.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TimeSwitch.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\WindInducGenerator.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ControlledVoltageSource.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\BranchCurrentMsrComp.h">
+      <Filter>Header Files\MsrCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\BranchVoltageMsrComp.h">
+      <Filter>Header Files\MsrCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MeasureComponent.h">
+      <Filter>Header Files\MsrCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\NodeVoltageMsrComp.h">
+      <Filter>Header Files\MsrCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SigmaCtrlComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PICtrlComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ConstantCtrlComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\CtrlComponent.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PulseGenComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TriangleGenComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SinGenComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PCtrlComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\T2DTrans.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\D2TTrans.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\S2RTrans.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\R2STrans.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PRCoordinate.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Comparator.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Limiter.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PWMConverter.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InducGenAngleMsr.h">
+      <Filter>Header Files\MsrCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\InducGenWrMsr.h">
+      <Filter>Header Files\MsrCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TimedAcVoltageSource.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\WoundInducGenerator.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PhotoVoltaic.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TimeConstant.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\ImpulseGenComp.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Sampler.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Delay.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Selector.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\TimedResistance.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Battery.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SampleHold.h">
+      <Filter>Header Files\CtrlCompt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\S_EMTP.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\S_EMTP_linux.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\S_EMTP_WIN32.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AcVoltageSource.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DiodeWithSC.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Asych5.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Breaker.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Capacitance.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Component.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Diode.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IGBT.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Impedance.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InducGenerator.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inductance.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inverter.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Motor15.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MWSynGenerator12.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\newIGBT.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resistance.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimpleBranch.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SinglePhaseTransformer.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SynchGenerator.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreePhaseRectifierBridge.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreePhaseTransformer.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeSwitch.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WindInducGenerator.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControlledVoltageSource.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NodeVoltageMsrComp.cpp">
+      <Filter>Resource Files\MsrCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BranchVoltageMsrComp.cpp">
+      <Filter>Resource Files\MsrCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BranchCurrentMsrComp.cpp">
+      <Filter>Resource Files\MsrCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeasureComponent.cpp">
+      <Filter>Resource Files\MsrCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PICtrlComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SigmaCtrlComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConstantCtrlComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CtrlComponent.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PulseGenComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TriangleGenComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SinGenComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCtrlComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\T2DTrans.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\D2TTrans.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\S2RTrans.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\R2STrans.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRCoordinate.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Comparator.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Limiter.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PWMConverter.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InducGenAngleMsr.cpp">
+      <Filter>Resource Files\MsrCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InducGenWrMsr.cpp">
+      <Filter>Resource Files\MsrCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimedAcVoltageSource.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WoundInducGenerator.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EMTP.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Delay.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Selector.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sampler.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeConstant.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImpulseGenComp.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhotoVoltaic.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimedResistance.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Battery.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SampleHold.cpp">
+      <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configure.txt">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

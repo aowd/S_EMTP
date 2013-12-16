@@ -1,0 +1,133 @@
+﻿生成启动时间为 2013/12/6 10:08:07。
+     1>项目“D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\S_EMTP\S_EMTP.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\S_EMTP.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\S_EMTP_WIN32.cpp  /GX 
+     1>cl : 命令行 warning D9035: “GX”选项已否决，并将在将来的版本中移除
+     1>cl : 命令行 warning D9036: 使用“EHsc”而不使用“GX”
+         S_EMTP_WIN32.cpp
+     1>c:\root\include\w32pragma.h(56): warning C4005: “WINVER”: 宏重定义
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\sdkddkver.h(212) : 参见“WINVER”的前一个定义
+     1>c:\root\include\w32pragma.h(59): warning C4005: “_X86_”: 宏重定义
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windows.h(102) : 参见“_X86_”的前一个定义
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\SinglePhaseTransformer.h(52): warning C4266: “void Component::saveBranchCurrent(double **,int &,int)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(34) : 参见“Component::saveBranchCurrent”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Breaker.h(23): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Breaker.h(23): warning C4266: “void Component::setControlledVariableForSwitch(double *)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(53) : 参见“Component::setControlledVariableForSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Diode.h(27): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\TimeSwitch.h(17): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\IGBT.h(28): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\ThreePhaseRectifierBridge.h(62): warning C4266: “void Component::saveBranchCurrent(double **,int &,int)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(34) : 参见“Component::saveBranchCurrent”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\ThreePhaseRectifierBridge.h(62): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Inverter.h(58): warning C4266: “bool Component::checkSwitch(double)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(44) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\DiodeWithSC.h(23): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\newIGBT.h(37): warning C4266: “bool Component::checkSwitch(int,TMatrixD &)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(45) : 参见“Component::checkSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\newIGBT.h(37): warning C4266: “void Breaker::setControlledVariableForSwitch(TVectorD,int *,int,TVectorD,int *,int)”: 不重写基“Breaker”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Breaker.h(18) : 参见“Breaker::setControlledVariableForSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Breaker.h(6) : 参见“Breaker”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\ControlledVoltageSource.h(20): warning C4266: “void SimpleBranch::setControlledVariableForSwitch(TVectorD,int *,int,TVectorD,int *,int)”: 不重写基“SimpleBranch”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\SimpleBranch.h(24) : 参见“SimpleBranch::setControlledVariableForSwitch”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\SimpleBranch.h(6) : 参见“SimpleBranch”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\PWMConverter.h(101): warning C4266: “void Component::saveBranchCurrent(TMatrixD &,int &,int)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(33) : 参见“Component::saveBranchCurrent”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+     1>d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\ThreePhaseTransformer.h(54): warning C4266: “void Component::saveBranchCurrent(TMatrixD &,int &,int)”: 不重写基“Component”中的虚拟成员函数；函数被隐藏
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(33) : 参见“Component::saveBranchCurrent”的声明
+                 d:\home\gao haixiang\emtp\emtp_full_withctrl\s_emtp\inc\Component.h(19) : 参见“Component”的声明
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\Release\S_EMTP.exe" /INCREMENTAL:NO /NOLOGO libCore.lib libMatrix.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:MSVCIRT.LIB /MANIFEST /ManifestFile:"Release\S_EMTP.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\Release\S_EMTP.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\Release\S_EMTP.lib" /MACHINE:X86 Release\AcVoltageSource.obj
+         Release\Asych5.obj
+         Release\Battery.obj
+         Release\BranchCurrentMsrComp.obj
+         Release\BranchVoltageMsrComp.obj
+         Release\Breaker.obj
+         Release\Capacitance.obj
+         Release\Comparator.obj
+         Release\Component.obj
+         Release\ConstantCtrlComp.obj
+         Release\ControlledVoltageSource.obj
+         Release\CtrlComponent.obj
+         Release\D2TTrans.obj
+         Release\Delay.obj
+         Release\Diode.obj
+         Release\DiodeWithSC.obj
+         Release\EMTP.obj
+         Release\IGBT.obj
+         Release\Impedance.obj
+         Release\ImpulseGenComp.obj
+         Release\InducGenAngleMsr.obj
+         Release\InducGenerator.obj
+         Release\InducGenWrMsr.obj
+         Release\Inductance.obj
+         Release\Inverter.obj
+         Release\Limiter.obj
+         Release\MeasureComponent.obj
+         Release\Motor15.obj
+         Release\MWSynGenerator12.obj
+         Release\newIGBT.obj
+         Release\NodeVoltageMsrComp.obj
+         Release\PCtrlComp.obj
+         Release\PhotoVoltaic.obj
+         Release\PICtrlComp.obj
+         Release\PRCoordinate.obj
+         Release\PulseGenComp.obj
+         Release\PWMConverter.obj
+         Release\R2STrans.obj
+         Release\Resistance.obj
+         Release\S2RTrans.obj
+         Release\SampleHold.obj
+         Release\Sampler.obj
+         Release\Selector.obj
+         Release\SigmaCtrlComp.obj
+         Release\SinGenComp.obj
+         Release\S_EMTP.obj
+         Release\S_EMTP_linux.obj
+         Release\S_EMTP_WIN32.obj
+         Release\SimpleBranch.obj
+         Release\SinglePhaseTransformer.obj
+         Release\SynchGenerator.obj
+         Release\T2DTrans.obj
+         Release\ThreePhaseRectifierBridge.obj
+         Release\ThreePhaseTransformer.obj
+         Release\TimeConstant.obj
+         Release\TimedAcVoltageSource.obj
+         Release\TimedResistance.obj
+         Release\TimeSwitch.obj
+         Release\TriangleGenComp.obj
+         Release\WindInducGenerator.obj
+         Release\WoundInducGenerator.obj
+         正在生成代码
+         已完成代码的生成
+         S_EMTP.vcxproj -> D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\Release\S_EMTP.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\Release\S_EMTP.exe;#1" /manifest Release\S_EMTP.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\S_EMTP.unsuccessfulbuild”。
+         正在对“Release\S_EMTP.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\home\Gao Haixiang\EMTP\EMTP_full_withCtrl\S_EMTP\S_EMTP.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.57

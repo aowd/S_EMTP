@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S_EMTP", "S_EMTP\S_EMTP.vcxproj", "{37BD8C28-2E1E-4B04-9116-9151795BED67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37BD8C28-2E1E-4B04-9116-9151795BED67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37BD8C28-2E1E-4B04-9116-9151795BED67}.Debug|Win32.Build.0 = Debug|Win32
+		{37BD8C28-2E1E-4B04-9116-9151795BED67}.Release|Win32.ActiveCfg = Release|Win32
+		{37BD8C28-2E1E-4B04-9116-9151795BED67}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
