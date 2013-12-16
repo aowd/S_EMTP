@@ -12,5 +12,9 @@
 *.la
 *.a
 
-# result files
+# Result files
 *.dat
+*.out
+
+# Matlab files
+*.fig
