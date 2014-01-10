@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /S_EMTP/FigForCase121
 
 /S_EMTP/FigForCase272
@@ -19,3 +20,25 @@ result
 /S_EMTP/FigForCase420
 /S_EMTP/FigForCase425
 /S_EMTP/FigForCase433
+=======
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Result files
+*.dat
+*.out
+
+# Matlab files
+*.fig
+>>>>>>> 543501a4c229179f54d1faffe9d8354227be0117
