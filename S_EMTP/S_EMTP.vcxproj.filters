@@ -207,6 +207,9 @@
     <ClInclude Include="inc\SampleHold.h">
       <Filter>Header Files\CtrlCompt</Filter>
     </ClInclude>
+    <ClInclude Include="inc\WoundInducGenerator2.h">
+      <Filter>Header Files\ElecCompt</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\S_EMTP.cpp">
@@ -391,6 +394,9 @@
     </ClCompile>
     <ClCompile Include="src\SampleHold.cpp">
       <Filter>Resource Files\CtrlCompt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WoundInducGenerator2.cpp">
+      <Filter>Resource Files\ElecCompt</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

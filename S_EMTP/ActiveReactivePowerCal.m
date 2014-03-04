@@ -1,9 +1,9 @@
 %% 通过三相正弦瞬时功率计算有功和无功功率
 %% 输入量
-Vabc_PSC=result_PSC(:,19:21)/1e3;
-Iabc_PSC=-result_PSC(:,64:66)/1e3;
-Vabc_CPP=result_CPP(:,19:21)/1e3;
-Iabc_CPP=-result_CPP(:,64:69)/1e3;
+Vabc_PSC=result_PSC(:,47:49)/1e3;
+Iabc_PSC=-result_PSC(:,118:120)/1e3;
+Vabc_CPP=result_CPP(:,47:49)/1e3;
+Iabc_CPP=-result_CPP(:,118:120)/1e3;
 
 %% 计算DQ轴电量
 n_PSC=length(t_PSC);

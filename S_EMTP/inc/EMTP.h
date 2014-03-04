@@ -22,6 +22,7 @@
 #include "Impedance.h"
 #include "InducGenerator.h"
 #include "WoundInducGenerator.h"
+#include "WoundInducGenerator2.h"
 #include "WindInducGenerator.h"
 #include "newIGBT.h"
 #include "ControlledVoltageSource.h"

@@ -6,12 +6,18 @@ stg=strcat('================',datestr(now),'================');
 disp(stg);
 %% 算例信息
 plotFlag = 1;%作图标志位
-iCase=435;%算例编号
+iCase=212;%算例编号
+
+%% 算例库
 switch iCase
     case 211
         nNode = 15;%节点数
         loadID = [1 4 1-nNode 4-nNode];
         nFile = 4;
+    case 212
+        nNode = 6;%节点数
+        loadID = [1 4 1-nNode 4-nNode];
+        nFile = 2;
     case 213
         nNode = 12;%节点数
         loadID = [1 4 1-nNode 4-nNode];
@@ -163,7 +169,7 @@ for k = 1:nFile
     end
     result_temp = load(stg);
     t_PSC=result_temp(:,1);
-    dT = t_PSC(2)-t_PSC(1);
+    dT_PSC = t_PSC(2)-t_PSC(1);
     result_PSC = [result_PSC result_temp(:,2:end)*1000];
 end
 
@@ -171,6 +177,7 @@ end
 stg = sprintf('./result/result_latest/result%d.dat',iCase);
 result_temp=load(stg);
 t_CPP=result_temp(:,1);%时间序列
+dT_CPP=t_CPP(2)-t_CPP(1);
 result_CPP=result_temp(:,2:end);%CPP数据
 
 %%
@@ -191,7 +198,7 @@ if plotFlag==1
         ylim([ymin ymax]);
         legend('CPP result','PSC result')
         subplot(2,1,2);
-        plot(t_CPP,result_CPP(:,index(k))-result_PSC((t_CPP(1)-t_PSC(1))/dT+1:end,index(k)));
+        plot(t_CPP,result_CPP(:,index(k))-result_PSC(round((t_CPP(1)-t_PSC(1))/dT_PSC+1):round(dT_CPP/dT_PSC):end,index(k)));
     end
 end
 

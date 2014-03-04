@@ -155,6 +155,7 @@
     <ClInclude Include="inc\TriangleGenComp.h" />
     <ClInclude Include="inc\WindInducGenerator.h" />
     <ClInclude Include="inc\WoundInducGenerator.h" />
+    <ClInclude Include="inc\WoundInducGenerator2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AcVoltageSource.cpp" />
@@ -218,6 +219,7 @@
     <ClCompile Include="src\TriangleGenComp.cpp" />
     <ClCompile Include="src\WindInducGenerator.cpp" />
     <ClCompile Include="src\WoundInducGenerator.cpp" />
+    <ClCompile Include="src\WoundInducGenerator2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="configure.txt" />

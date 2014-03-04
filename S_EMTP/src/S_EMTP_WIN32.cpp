@@ -47,7 +47,7 @@ void S_EMTP_WIN32()
 	cout << "Run ends!" << endl;
 
 	// 后续处理
-	//emtp.saveResult(); //系统输出函数：将计算结果按2维数组的格式存储在文本文件result.dat中
+	emtp.saveResult(); //系统输出函数：将计算结果按2维数组的格式存储在文本文件result.dat中
 	delete emtp.lu_conductanceMatrix;//每一个case里面new出来的lu对象都要删除掉
 	cout<<"总耗时为\t"<<emtp.cal_timeCost(emtp.tStartAll,emtp.tEndAll)/1e6<<"s"<<endl;
 	cout<<"每步长平均耗时为\t"<<emtp.cal_timeCost(emtp.tStartAll,emtp.tEndAll)/emtp.nSolveG/emtp.Ns<<"us"<<endl;

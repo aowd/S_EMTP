@@ -1395,7 +1395,7 @@ void EMTP::	specifySystem()
 	nColumns=nBranch;
 
 	int type=0;
-	int elecCompTypeNumber =28;
+	int elecCompTypeNumber =29;
 	int* elecCompCount = new int[elecCompTypeNumber];
 	for (int i=0;i<elecCompTypeNumber;i++)
 	{
@@ -1572,6 +1572,12 @@ void EMTP::	specifySystem()
 			elecCompCount[27]+=1;
 			com = new Battery(elecCompCount[27],(int)caseDfnMatrix(i,1),(int)caseDfnMatrix(i,2),caseDfnMatrix(i,3));
 			branches->push_back(com);
+			break;
+		case 29:
+			elecCompCount[28]+=1;
+			com = new WoundInducGenerator2(elecCompCount[28],(int)caseDfnMatrix(i,1),(int)caseDfnMatrix(i,2),(int)caseDfnMatrix(i,3),caseDfnMatrix(i,4));
+			branches->push_back(com);
+			nColumns=nColumns+5;
 			break;
 
 		case 77:
@@ -1860,7 +1866,7 @@ void EMTP::	specifySystem()
 	/*************************************************************/
 	/*                   异步电机相关数组创建                    */
 	/*************************************************************/
-	nIndGen = elecCompCount[17];
+	nIndGen = elecCompCount[17]+elecCompCount[28];
 	if ( nIndGen != 0 )
 	{
 		branchNumArray_IndGen = new int[nIndGen];
@@ -1868,7 +1874,7 @@ void EMTP::	specifySystem()
 		for (int k=0;k<nBranch;k++)
 		{
 			tempCom = branches->at(k);
-			if(tempCom->type == 18)
+			if(tempCom->type == 18||tempCom->type == 29)
 			{
 				branchNumArray_IndGen[k3] = k;
 				k3++;
@@ -3091,6 +3097,17 @@ void EMTP::solveG(double * tau_new)
 			{
 				formConductanceMatrix();
 			}
+		}
+
+		//若存在电机，每个时步都需要重新形成导纳矩阵
+		if (nIndGen)
+		{
+			for (int k=0;k<nIndGen;k++)
+			{
+				Component* tempCom = branches->at(branchNumArray_IndGen[k]);
+				tempCom->calculateNortonEquivalentResistance(curTime);
+			}
+			formConductanceMatrix();
 		}
 
 		transferControlVariables(); //将控制信号值传输至电气系统
